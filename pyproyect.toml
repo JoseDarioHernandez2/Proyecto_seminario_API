@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "proyecto-final-mineix"
+version = "0.1.0"
+description = "Proyecto Final Seminario Programación MINE IX"
+authors = ["Equipo MINE IX <correo@ejemplo.com>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110"
+uvicorn = "^0.30"
+scikit-learn = "^1.5"
+joblib = "^1.4"
+streamlit = "^1.38"
+requests = "^2.32"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
