@@ -24,3 +24,8 @@ def test_predict_contract():
 response = client.post("/predict", json=payload)
 assert response.status_code == 200
 assert "prediction" in response.json()
+
+# --------------------------------------------
+# Levantar la API con Uvicorn
+# poetry run uvicorn SRC.API.main:app --reload --host 127.0.0.1 --port 8000
+# --------------------------------------------

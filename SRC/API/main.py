@@ -136,3 +136,8 @@ def predict(data: InputData):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error en la predicción: {e}")
+
+# --------------------------------------------
+# Levantar la API con Uvicorn
+# poetry run uvicorn SRC.API.main:app --reload --host 127.0.0.1 --port 8000
+# --------------------------------------------
